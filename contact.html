@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Grill n’ Chill</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you shortly.</p>
+
+    <form action="https://formsubmit.co/oyololajosiah@gmail.com" method="POST" class="contact-form" onsubmit="showThankYou()">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://jolly078.github.io/ict211-web-project/">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+  </main>
+  <br><br>
+
+  <footer>
+    <p>&copy; 2025 Group 28 - Grill n’ Chill | ICT 211 Project</p>
+  </footer>
+</body>
+</html>
